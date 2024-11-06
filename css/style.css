@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  margin: 0.2rem;
+  font-family: "Poppins";
+}
+
+.opening {
+  font-family: "Poppins";
+  text-align: justify;
+}
+
+/* main & body */
+main {
+  display: flex;
+  justify-content: space-between; /* Mengatur agar container1 dan container2 berdampingan */
+  padding: 1rem;
+  flex-direction: row; /* Mengatur layout menjadi horizontal */
+}
+
+.container1 {
+  padding: 2rem;
+  width: 50%; /* Atur lebar untuk container1 */
+}
+
+.left {
+  margin-top: 1rem;
+}
+
+/* Styling untuk form */
+.calculator {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 0.01rem solid gray;
+  border-radius: 1rem;
+  padding: 1.3rem 1rem;
+  margin: 0;
+  box-shadow: 0.3rem 0.4rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.calculator label,
+.calculator input,
+.calculator button {
+  margin-bottom: 1rem;
+}
+
+.calculator input {
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+}
+
+button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #4c4cff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3262c7;
+}
+
+.keterangan {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  font-family: "Poppins";
+}
+
+.keterangan1,
+.keterangan2 {
+  width: 100%;
+  text-align: justify;
+  padding: 0.5rem 0;
+}
+
+.object-list {
+  padding: 1rem 0;
+}
+
+.listing {
+  margin: 0.2rem;
+}
+
+.container2 {
+  padding: 2rem;
+  width: 50%; /* Atur lebar untuk container2 */
+}
+
+/* Pastikan container2 berada di sebelah kanan */
+.right {
+  padding: 1.3rem 1rem;
+  margin: 1.2rem 0;
+}
+
+.right h1 {
+  padding: 1rem 0;
+}
+
+.result {
+  justify-content: center; /* Memusatkan konten di dalam .result */
+  display: flex; /* Menggunakan flexbox */
+  flex-direction: column; /* Mengatur arah konten ke kolom */
+  align-items: center; /* Memusatkan item secara horizontal */
+  text-align: center;
+  border: 0.01rem solid gray;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.5rem rgba(0, 0, 0, 0.4);
+  padding: 3rem 1rem;
+  font-family: "Poppins";
+}
+
+#download-button {
+  margin: 1rem 0;
+  display: none;
+}
+
+.result #bmi-result {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.penjelasanhasil {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.penjelasanhasil p {
+  margin: 1rem 0;
+}
+
+.konsultasi {
+  padding: 1rem 0;
+  border: 0.01rem solid gray;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.5rem rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.konsultasi h2 {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.konsultasi p {
+  font-size: 1rem;
+}
+
+.button {
+  margin: 1rem 0;
+}
+
+.download {
+  font-size: 1.8rem;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.download p {
+  font-family: "Poppins";
+}
+
+footer {
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.playstore {
+  width: 10rem;
+  height: 3.5rem;
+  margin: 0 1rem;
+  padding: 0;
+  border-radius: 0.8rem;
+}
+
+#playstore {
+  background-color: white;
+}
+
+.appstore {
+  width: 10rem;
+  height: 3.5rem;
+  margin: 0 1rem;
+  padding: 0;
+  border-radius: 0.8rem;
+}
+
+#appstore {
+  background-color: white;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; /* Menjaga layout tumpuk secara vertikal */
+  }
+}
